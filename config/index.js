@@ -63,6 +63,16 @@ module.exports = {
      * Source Maps
      */
 
+    proxyTable: {
+      '/api':{
+        target: 'https://lzo-web-app.azurewebsites.net/back-end-0.0.1-SNAPSHOT',
+        pathRewrite:{
+          '^/api':''
+        },
+        changeOrigin:true,
+      }
+    },
+
     productionSourceMap: true,
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',

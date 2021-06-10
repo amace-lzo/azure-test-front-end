@@ -5,12 +5,12 @@ import {
 } from 'element-ui'
 import qs from 'qs'
 // 判断是否是生产环境
-const isPro = process.env.NODE_ENV === 'production' // process.env.NODE_ENV用于区分是生产环境还是开发环境
-const apiRoot = process.env.API_ROOT;
+// const isPro = process.env.NODE_ENV === 'production' // process.env.NODE_ENV用于区分是生产环境还是开发环境
+// const apiRoot = process.env.API_ROOT;
 // 配置不同的baseURL
-let baseURL = isPro ? apiRoot : '/api'
+// let baseURL = isPro ? apiRoot : '/api'
 const service = axios.create({
-  baseURL: baseURL,
+  baseURL: '/api',
   timeout: 30000 // 请求超时时间
 })
 let loading = ''
