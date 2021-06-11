@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api':{
-        target: 'http://127.0.0.1:8081',
+        target: 'http://localhost:8080/back_end/',
         pathRewrite:{
           '^/api':''
         },
@@ -62,16 +62,6 @@ module.exports = {
     /**
      * Source Maps
      */
-
-    proxyTable: {
-      '/api':{
-        target: 'https://lzo-web-app.azurewebsites.net/back-end-0.0.1-SNAPSHOT',
-        pathRewrite:{
-          '^/api':''
-        },
-        changeOrigin:true,
-      }
-    },
 
     productionSourceMap: true,
     // https://webpack.js.org/configuration/devtool/#production
