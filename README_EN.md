@@ -1,4 +1,4 @@
-[中文][1] | English[1]
+[中文][1] | English
 
 ## Deploy Vue Project In Azure Cloud
 
